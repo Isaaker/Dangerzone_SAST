@@ -29,6 +29,19 @@ Depending on the selected mode, this action will show an security alert or gener
 
 ## Installation
 
+Here there is an example github action you can use on your own repo:
+
+```
+name: SAST Dangerzone
+jobs:
+  sast_dangerzone:
+    permissions:                                                                         
+      contents: read
+  uses:
+  secrets: 
+    token: ${{ secrets.GITHUB_TOKEN }}
+```
+
 
 ## License
 The code is under **Creative Commons Attribution-ShareAlike 4.0 International Public License**, view the [license here](https://spotify.piscinadeentropia.es/license)
